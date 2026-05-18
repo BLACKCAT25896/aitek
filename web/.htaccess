@@ -1,0 +1,20 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Allow direct access to static files
+RewriteRule ^(assets|canvaskit|icons|flutter\.js|main\.dart\.js|manifest\.json|favicon\.png) - [L]
+
+# If file or directory exists, serve it normally
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise redirect to index.html (SPA routing)
+RewriteRule ^ index.html [L]
+</IfModule>
+
+# Correct MIME types for Flutter Web
+AddType application/javascript .js
+AddType application/wasm .wasm
+AddType application/json .json

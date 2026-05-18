@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const currentUrl = window.location.origin + window.location.pathname;
+
+      // Canonical
+      let canonical = document.querySelector("link[rel='canonical']");
+      if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.rel = "canonical";
+        document.head.appendChild(canonical);
+      }
+      canonical.href = currentUrl;
+
+      // OG URL
+      const og = document.querySelector("meta[property='og:url']");
+      if (og) og.setAttribute("content", currentUrl);
+
+    });
+  </script>
+
+  <script>
+    (function () {
+
+      function updateSeoUrls() {
+
+        const currentUrl = window.location.origin + window.location.pathname;
+
+        // Canonical
+        let canonical = document.querySelector("link[rel='canonical']");
+        if (!canonical) {
+          canonical = document.createElement("link");
+          canonical.rel = "canonical";
+          document.head.appendChild(canonical);
+        }
+        canonical.setAttribute("href", currentUrl);
+
+        // OG URL
+        let ogUrl = document.querySelector("meta[property='og:url']");
+        if (!ogUrl) {
+          ogUrl = document.createElement("meta");
+          ogUrl.setAttribute("property", "og:url");
+          document.head.appendChild(ogUrl);
+        }
+        ogUrl.setAttribute("content", currentUrl);
+
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", updateSeoUrls);
+      } else {
+        updateSeoUrls();
+      }
+
+    })();
+  </script>
+
+  <!-- Enhanced SEO Meta Tags -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="description" content="School - Complete School Management System. Manage attendance, fees, exams, students, teachers, and academic records efficiently. Modern LMS for educational institutions.">
+  <meta name="keywords" content="school management system, LMS, learning management system, student management, teacher portal, attendance tracking, fee management, exam management, academic records, education software, school administration">
+  <meta name="author" content="School">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+
+  <!-- Enhanced Open Graph / Facebook -->
+  <meta property="og:title" content="School - Complete School Management System & LMS">
+  <meta property="og:description" content="Streamline your educational institution with School. Comprehensive school management system featuring attendance tracking, fee management, exam scheduling, and student-teacher portals.">
+  <meta property="og:url" content="https://mightyschool.xyz/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://mightyschool.xyz/logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="School">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Enhanced Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="School - Complete School Management System">
+  <meta name="twitter:description" content="Modern school management software for educational institutions. Manage students, teachers, attendance, fees, and exams efficiently.">
+  <meta name="twitter:image" content="https://mightyschool.xyz/logo.png">
+  <meta name="twitter:site" content="@mightyschool">
+  <meta name="twitter:creator" content="@mightyschool">
+
+  <!-- Additional SEO Meta Tags -->
+  <meta name="theme-color" content="#667eea">
+  <meta name="msapplication-TileColor" content="#667eea">
+  <meta name="application-name" content="School">
+  <meta name="msapplication-tooltip" content="School Management System">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "School",
+    "description": "Complete School Management System and Learning Management System for educational institutions",
+    "url": "https://mightyschool.xyz/",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "School",
+      "url": "https://mightyschool.xyz/"
+    },
+    "featureList": [
+      "Student Management",
+      "Teacher Portal",
+      "Attendance Tracking",
+      "Fee Management",
+      "Exam Management",
+      "Academic Records",
+      "Parent Portal",
+      "Administrative Dashboard"
+    ]
+  }
+  </script>
+
+  <!-- Google Sign-In -->
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_KEY">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="School">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>School - Complete School Management System & LMS</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- SEO Files -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+  <!-- Preconnect to external domains for performance -->
+  <link rel="preconnect" href="https://www.gstatic.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+  <!-- Google Search Console Verification (Add your verification code) -->
+  <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE"> -->
+
+  <!-- Bing Webmaster Tools Verification (Add your verification code) -->
+  <!-- <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE_HERE"> -->
+
+  <!-- Performance Hints -->
+  <link rel="preload" href="style.css" as="style">
+<!--  <link rel="preload" href="logo.png" as="image">-->
+
+  <script type="application/javascript" src="/assets/packages/flutter_inappwebview_web/assets/web/web_support.js" defer></script>
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = {{flutter_service_worker_version}};
+  </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service_worker.js')
+          .then((registration) => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          })
+          .catch((error) => {
+            console.log('ServiceWorker registration failed: ', error);
+          });
+      });
+    }
+  </script>
+
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js?version=2.9.1" defer></script>
+</head>
+<body>
+  <script src='https://cdn.jsdelivr.net/npm/pdfjs-dist@4.6.82/build/pdf.min.mjs' type='module'></script>
+  <script type='module'>
+  var { pdfjsLib } = globalThis;
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.6.82/build/pdf.worker.mjs';
+
+  var pdfRenderOptions = {
+    cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.6.82/cmaps/',
+    cMapPacked: true,
+  }
+  </script>
+
+<!-- Modern School Management System Preloader -->
+<div class="preloader">
+  <!-- Educational Equipment Floating Background -->
+  <div class="educational-equipment">
+    <div class="equipment-item">📚</div>
+    <div class="equipment-item">✏️</div>
+    <div class="equipment-item">🎓</div>
+    <div class="equipment-item">📐</div>
+    <div class="equipment-item">🔬</div>
+    <div class="equipment-item">🖥️</div>
+    <div class="equipment-item">📊</div>
+    <div class="equipment-item">🎨</div>
+  </div>
+
+  <div class="school-loader">
+    <!-- School Building Animation -->
+    <div class="school-building">
+      <div class="building-base">
+        <div class="building-roof"></div>
+        <div class="building-door"></div>
+        <div class="building-window"></div>
+        <div class="building-window"></div>
+        <div class="building-window"></div>
+        <div class="building-window"></div>
+      </div>
+    </div>
+
+    <!-- Floating Books Animation -->
+    <div class="floating-books">
+      <div class="book"></div>
+      <div class="book"></div>
+      <div class="book"></div>
+      <div class="book"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Header Placeholder (Optional) -->
+<header class="header">
+  <div class="header-container d-flex align-items-center justify-content-between">
+    <div class="header-start d-flex gap-5 align-items-center">
+<!--     // <img class="logo" src="appbarlogo.png" alt="">-->
+      <div class="placeholder placeholder-wide"></div>
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+    </div>
+    <div class="header-end d-flex gap-5">
+      <div class="book">
+        <div class="page"></div>
+        <div class="page"></div>
+        <div class="page"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Replace inline SVGs -->
+<script>
+  document.querySelectorAll("img.svg").forEach(function (img) {
+    var imgID = img.getAttribute("id");
+    var imgClass = img.getAttribute("class");
+    var imgURL = img.getAttribute("src");
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", imgURL, true);
+    xhr.responseType = "document";
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        var data = xhr.response;
+        var svg = data.querySelector("svg");
+        if (typeof imgID !== "undefined") {
+          svg.setAttribute("id", imgID);
+        }
+        if (typeof imgClass !== "undefined") {
+          svg.setAttribute("class", imgClass + " replaced-svg");
+        }
+        svg.removeAttribute("xmlns:a");
+        if (!svg.getAttribute("viewBox") && svg.getAttribute("height") && svg.getAttribute("width")) {
+          svg.setAttribute("viewBox", "0 0 " + svg.getAttribute("height") + " " + svg.getAttribute("width"));
+        }
+        img.parentNode.replaceChild(svg, img);
+      }
+    };
+    xhr.send();
+  });
+</script>
+
+<!-- Flutter Loader -->
+<script>
+  window.addEventListener('load', function(ev) {
+    {{flutter_js}}
+    {{flutter_build_config}}
+
+    _flutter.loader.load({
+      serviceWorker: {
+        serviceWorkerVersion: {{flutter_service_worker_version}},
+      },
+      onEntrypointLoaded: function(engineInitializer) {
+        engineInitializer.initializeEngine().then(function(appRunner) {
+          if(document.getElementById('splash'))
+            document.getElementById('splash').remove();
+
+          // Smooth preloader fade out
+          const preloader = document.querySelector('.preloader');
+          if (preloader) {
+            setTimeout(() => {
+              preloader.classList.add('fade-out');
+              setTimeout(() => {
+                preloader.style.display = 'none';
+              }, 500);
+            }, 1000); // Show preloader for at least 1 second
+          }
+
+          appRunner.runApp();
+        });
+      }
+    });
+  });
+</script>
+
+<!-- Theme from localStorage -->
+<script>
+  if (typeof(Storage) !== "undefined") {
+    var itemValue = localStorage.getItem("flutter.demand_theme");
+    console.log("flutter.theme", itemValue);
+    if (itemValue !== null) {
+      if (itemValue === "true") {
+        document.body.classList.add("theme-dark");
+      } else {
+        document.body.classList.remove("theme-light");
+      }
+    } else {
+      console.log("Item not found in localStorage");
+    }
+  } else {
+    console.log("localStorage is not supported in this browser");
+  }
+</script>
+
+<!-- Firebase Scripts (CDN-based only, no ES6 import) -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyATwpBSYz69b5Y9ryQLELOJIHZSpJcXf7I",
+    authDomain: "demancms.firebaseapp.com",
+    projectId: "demancms",
+    storageBucket: "demancms.appspot.com",
+    messagingSenderId: "889759666168",
+    appId: "1:889759666168:web:ab661cb341d3e47384d00d"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</body>
+</html>

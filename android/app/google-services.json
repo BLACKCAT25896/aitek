@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "387838626900",
+    "project_id": "codemoly-e341f",
+    "storage_bucket": "codemoly-e341f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387838626900:android:0c3fb23ba08d75572cb1c1",
+        "android_client_info": {
+          "package_name": "com.school.mighty"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOE7AK4hMTFQ_9-iYTvUR2X2JdtwePpcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

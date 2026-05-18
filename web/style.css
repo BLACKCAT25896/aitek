@@ -1,0 +1,604 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+body.theme-dark {
+    background-color: #111;
+}
+
+/* Optimized Fast-Loading Preloader */
+.preloader {
+  position: fixed;
+  inline-size: 100%;
+  block-size: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease-out;
+}
+
+.theme-dark .preloader {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+}
+
+@media (max-width: 1199px) {.header {display: none}}
+
+/* Main Loader Container */
+.school-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Educational Equipment Floating Animation */
+.educational-equipment {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.equipment-item {
+  position: absolute;
+  font-size: 24px;
+  opacity: 0.7;
+  animation: floatEquipment 8s ease-in-out infinite;
+}
+
+/* Individual Equipment Items */
+.equipment-item:nth-child(1) {
+  content: '📚';
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
+  animation-duration: 8s;
+}
+
+.equipment-item:nth-child(2) {
+  content: '✏️';
+  top: 20%;
+  right: 20%;
+  animation-delay: 1s;
+  animation-duration: 9s;
+}
+
+.equipment-item:nth-child(3) {
+  content: '🎓';
+  top: 60%;
+  left: 10%;
+  animation-delay: 2s;
+  animation-duration: 7s;
+}
+
+.equipment-item:nth-child(4) {
+  content: '📐';
+  top: 70%;
+  right: 15%;
+  animation-delay: 3s;
+  animation-duration: 10s;
+}
+
+.equipment-item:nth-child(5) {
+  content: '🔬';
+  top: 30%;
+  left: 80%;
+  animation-delay: 4s;
+  animation-duration: 8.5s;
+}
+
+.equipment-item:nth-child(6) {
+  content: '🖥️';
+  top: 80%;
+  left: 70%;
+  animation-delay: 5s;
+  animation-duration: 9.5s;
+}
+
+.equipment-item:nth-child(7) {
+  content: '📊';
+  top: 15%;
+  left: 60%;
+  animation-delay: 6s;
+  animation-duration: 7.5s;
+}
+
+.equipment-item:nth-child(8) {
+  content: '🎨';
+  top: 50%;
+  right: 80%;
+  animation-delay: 7s;
+  animation-duration: 8.8s;
+}
+
+/* School Building Animation */
+.school-building {
+  position: relative;
+  width: 120px;
+  height: 80px;
+  margin-bottom: 1rem;
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.building-base {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  box-shadow:
+    0 4px 15px rgba(52, 152, 219, 0.3),
+    0 0 30px rgba(52, 152, 219, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  animation: buildingPulse 2s ease-in-out infinite;
+}
+
+.building-roof {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 20px solid #e74c3c;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  animation: roofShine 3s ease-in-out infinite;
+}
+
+.building-door {
+  width: 16px;
+  height: 24px;
+  background: #34495e;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px 8px 0 0;
+}
+
+.building-window {
+  width: 12px;
+  height: 12px;
+  background: #f39c12;
+  position: absolute;
+  border-radius: 2px;
+  animation: windowGlow 2s ease-in-out infinite alternate;
+}
+
+.building-window:nth-child(3) { top: 15px; left: 20px; animation-delay: 0s; }
+.building-window:nth-child(4) { top: 15px; right: 20px; animation-delay: 0.5s; }
+.building-window:nth-child(5) { top: 35px; left: 20px; animation-delay: 1s; }
+.building-window:nth-child(6) { top: 35px; right: 20px; animation-delay: 1.5s; }
+
+/* Floating Books Animation */
+.floating-books {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  margin: 1rem 0;
+}
+
+.book {
+  position: absolute;
+  width: 20px;
+  height: 28px;
+  border-radius: 2px;
+  animation: floatBooks 3s ease-in-out infinite;
+}
+
+.book:nth-child(1) {
+  background: linear-gradient(145deg, #e74c3c, #c0392b);
+  left: 20px;
+  animation-delay: 0s;
+}
+
+.book:nth-child(2) {
+  background: linear-gradient(145deg, #2ecc71, #27ae60);
+  left: 60px;
+  animation-delay: 0.5s;
+}
+
+.book:nth-child(3) {
+  background: linear-gradient(145deg, #f39c12, #e67e22);
+  left: 100px;
+  animation-delay: 1s;
+}
+
+.book:nth-child(4) {
+  background: linear-gradient(145deg, #9b59b6, #8e44ad);
+  left: 140px;
+  animation-delay: 1.5s;
+}
+
+/* Progress Bar */
+.progress-container {
+  width: 200px;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00d4ff, #090979);
+  border-radius: 3px;
+  animation: progressLoad 3s ease-in-out infinite;
+}
+
+/* Enhanced Progress Container */
+.progress-container {
+  width: 200px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 2rem;
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.theme-dark .progress-container {
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 2px 4px rgba(0, 0, 0, 0.2),
+    0 1px 2px rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced Progress Bar */
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg,
+    #00d4ff 0%,
+    #5b86e5 25%,
+    #36d1dc 50%,
+    #5b86e5 75%,
+    #00d4ff 100%);
+  border-radius: 10px;
+  animation: progressLoad 3s ease-in-out infinite;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+  position: relative;
+}
+
+.progress-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent 100%);
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .school-building {
+    width: 100px;
+    height: 70px;
+  }
+
+  .building-base {
+    height: 50px;
+  }
+
+  .building-roof {
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 18px solid #e74c3c;
+    top: -18px;
+  }
+
+  .floating-books {
+    width: 160px;
+    height: 50px;
+  }
+
+  .book {
+    width: 16px;
+    height: 22px;
+  }
+
+  .book:nth-child(1) { left: 15px; }
+  .book:nth-child(2) { left: 45px; }
+  .book:nth-child(3) { left: 75px; }
+  .book:nth-child(4) { left: 105px; }
+
+  .progress-container {
+    width: 160px;
+    height: 6px;
+  }
+
+  .school-loader {
+    gap: 1.5rem;
+  }
+
+  /* Mobile Educational Equipment */
+  .equipment-item {
+    font-size: 18px;
+  }
+
+  .equipment-item:nth-child(1) { top: 8%; left: 10%; }
+  .equipment-item:nth-child(2) { top: 15%; right: 15%; }
+  .equipment-item:nth-child(3) { top: 65%; left: 8%; }
+  .equipment-item:nth-child(4) { top: 75%; right: 12%; }
+  .equipment-item:nth-child(5) { top: 25%; left: 85%; }
+  .equipment-item:nth-child(6) { top: 85%; left: 75%; }
+  .equipment-item:nth-child(7) { top: 12%; left: 55%; }
+  .equipment-item:nth-child(8) { top: 45%; right: 85%; }
+}
+
+/* Additional Visual Enhancements */
+.school-building::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 15px;
+  background: #f1c40f;
+  border-radius: 50% 50% 0 0;
+  animation: flagWave 2s ease-in-out infinite;
+}
+
+.school-building::after {
+  content: '🏫';
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  animation: iconBounce 3s ease-in-out infinite;
+}
+
+@keyframes flagWave {
+  0%, 100% { transform: translateX(-50%) rotate(0deg); }
+  50% { transform: translateX(-50%) rotate(5deg); }
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0px); }
+  50% { transform: translateX(-50%) translateY(-3px); }
+}
+
+/* Smooth fade out when loading completes */
+.preloader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.theme-dark .preloader .loader {
+  background: rgba(255, 255, 255, 0.15);
+}
+.preloader .loader::after {
+  content: "";
+  width: 30px;
+  height: 4.8px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  animation: animloader 2000ms linear infinite;
+  border-radius: 50rem;
+}
+
+.header {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+}
+.header-container {
+  max-inline-size: 1200px;
+  margin-inline: auto;
+  padding: 1.28rem 1.6rem;
+  background-color: #fff;
+  box-shadow: 0px 6px 12px -3px rgba(4, 97, 165, 0.1);
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+
+.theme-dark .header-container {
+  background-color: #111;
+}
+.header .logo {
+  max-height: 30px;
+
+}
+.placeholder {
+  block-size: 0.825rem;
+  inline-size: 3rem;
+  background-color: #F5F5F5;
+  border-radius: 0.3rem;
+}
+
+.theme-dark .placeholder {
+  background-color: #111;
+}
+
+
+.placeholder-wide {
+  inline-size: 12rem;
+}
+
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+.gap-3 {
+  gap: 1rem;
+}
+.gap-4 {
+  gap: 1.5rem;
+}
+.gap-5 {
+  gap: 3rem;
+}
+/* Modern School Preloader Animations */
+@keyframes buildingPulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.5);
+  }
+}
+
+@keyframes roofShine {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes windowGlow {
+  0% {
+    background: #f39c12;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+  }
+  100% {
+    background: #fff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes floatBooks {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(-2deg);
+  }
+}
+
+@keyframes progressLoad {
+  0% {
+    width: 0%;
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 100%;
+    opacity: 0.8;
+  }
+}
+
+@keyframes textPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatEquipment {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+    opacity: 0.7;
+  }
+  25% {
+    transform: translateY(-15px) translateX(5px) rotate(2deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-8px) translateX(-3px) rotate(0deg);
+    opacity: 0.8;
+  }
+  75% {
+    transform: translateY(-20px) translateX(8px) rotate(-2deg);
+    opacity: 0.6;
+  }
+}
+
+/* Legacy animations for backward compatibility */
+@keyframes animloader {
+  0% {
+    left: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes animloaderimg {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

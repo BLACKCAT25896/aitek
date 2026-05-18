@@ -1,0 +1,103 @@
+name: mighty_school
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.16+16
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.8
+  get: ^4.6.6
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  intl: ^0.20.2
+  connectivity_plus: ^6.1.3
+  path_provider: ^2.1.4
+  url_strategy: ^0.3.0
+  cached_network_image: ^3.4.1
+  image_picker: ^1.2.1
+  path: ^1.9.0
+  flutter_svg: ^2.0.10+1
+  file_picker: ^10.3.3
+  fluttertoast: ^8.2.10
+  pinput: ^5.0.0
+  flutter_html: ^3.0.0-beta.2
+  table_calendar: ^3.1.2
+  carousel_slider: ^5.0.0
+  flutter_staggered_grid_view: ^0.7.0
+  url_launcher: ^6.3.0
+  shimmer: ^3.0.0
+  dotted_border: ^2.1.0
+  percent_indicator: ^4.2.4
+  flutter_inappwebview: ^6.0.0
+  hidable: ^1.0.6
+  dotted_line: ^3.2.2
+  dropdown_button2: ^2.3.9
+  flutter_image_compress: ^2.4.0
+  open_file: ^3.5.6
+  syncfusion_flutter_charts: ^28.2.11
+  toastification: ^2.3.0
+  syncfusion_flutter_calendar: ^28.2.11
+  flutter_linkify: ^6.0.0
+  popover: ^0.3.1
+  font_awesome_flutter: ^11.0.0
+  marquee: ^2.3.0
+  scrollable_positioned_list: ^0.3.8
+  pdf: ^3.11.3
+  printing: ^5.14.2
+  universal_html: ^2.3.0
+  chat_gpt_sdk: ^3.1.5
+  flutter_markdown: ^0.7.7+1
+  flutter_colorpicker: ^1.1.0
+  image: ^4.5.4
+  mobile_scanner: ^7.1.3
+  html_editor_enhanced: ^2.7.1
+  flutter_widget_from_html_core: ^0.17.0
+  responsive_grid: ^2.4.4
+  webview_flutter: ^4.13.0
+  vdocipher_flutter: ^2.8.2
+
+  youtube_player_flutter: ^9.1.1
+  video_player: ^2.11.1
+  chewie: ^1.11.3
+  youtube_player_iframe: ^5.2.1
+  syncfusion_flutter_pdfviewer: ^28.2.12
+  web_smooth_scroll: ^2.0.0
+  pdfx: ^2.9.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/image/
+    - assets/image/kindergarten/
+    - assets/language/
+    - assets/icon/
+    - assets/icon/svg/
+    - assets/svg/
+    - assets/payment_icon/
+    - assets/image/saas/
+    - assets/image/question_bank/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/font/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/font/OpenSans-Medium.ttf
+          weight: 500
+        - asset: assets/font/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/font/OpenSans-Light.ttf
+          weight: 300
