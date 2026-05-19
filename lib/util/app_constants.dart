@@ -73,12 +73,7 @@ class AppConstants {
   static List<LanguageModel> languages = [
     LanguageModel(imageUrl: Images.unitedKingdom, languageName: 'English', countryCode: 'US', languageCode: 'en'),
     LanguageModel(imageUrl: Images.bangladesh, languageName: 'Bengali', countryCode: 'BD', languageCode: 'bn'),
-    LanguageModel(imageUrl: Images.india, languageName: 'Hindi', countryCode: 'IN', languageCode: 'hi'),
-    LanguageModel(imageUrl: Images.france, languageName: 'France', countryCode: 'FR', languageCode: 'fr'),
-    LanguageModel(imageUrl: Images.spain, languageName: 'Spanish', countryCode: 'SP', languageCode: 'sp'),
-    LanguageModel(imageUrl: Images.italy, languageName: 'Italian', countryCode: 'IT', languageCode: 'it'),
     LanguageModel(imageUrl: Images.saudi, languageName: 'Arabic', countryCode: 'SA', languageCode: 'ar'),
-    LanguageModel(imageUrl: Images.cambodia, languageName: 'Khmer ', countryCode: 'KH', languageCode: 'km'),
   ];
 
   static const int limitOfPickedIdentityImageNumber = 2;
