@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mighty_school/common/widget/custom_app_bar.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/signal_filter_widget.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/trading_signal_list_widget.dart';
+import 'package:aitek/common/widget/custom_app_bar.dart';
+import 'package:aitek/feature/home/presentation/widgets/signal_filter_widget.dart';
+import 'package:aitek/feature/home/presentation/widgets/trading_signal_list_widget.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

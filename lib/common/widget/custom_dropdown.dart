@@ -2,8 +2,8 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/util/dimensions.dart';
-import 'package:mighty_school/util/styles.dart';
+import 'package:aitek/util/dimensions.dart';
+import 'package:aitek/util/styles.dart';
 
 class CustomDropdown extends StatefulWidget {
   final double? width;

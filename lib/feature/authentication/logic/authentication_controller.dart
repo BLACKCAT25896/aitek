@@ -1,9 +1,9 @@
 
 import 'package:get/get.dart';
-import 'package:mighty_school/api_handle/api_checker.dart';
-import 'package:mighty_school/common/widget/custom_snackbar.dart';
-import 'package:mighty_school/feature/authentication/domain/authentication_repository.dart';
-import 'package:mighty_school/helper/route_helper.dart';
+import 'package:aitek/api_handle/api_checker.dart';
+import 'package:aitek/common/widget/custom_snackbar.dart';
+import 'package:aitek/feature/authentication/domain/authentication_repository.dart';
+import 'package:aitek/helper/route_helper.dart';
 
 
 class AuthenticationController extends GetxController implements GetxService{

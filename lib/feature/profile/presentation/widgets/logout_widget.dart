@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/feature/authentication/logic/authentication_controller.dart';
-import 'package:mighty_school/helper/route_helper.dart';
+import 'package:aitek/feature/authentication/logic/authentication_controller.dart';
+import 'package:aitek/helper/route_helper.dart';
 
 class LogoutButton extends StatefulWidget {
   final Color accentColor;

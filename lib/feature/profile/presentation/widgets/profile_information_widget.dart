@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/feature/profile/domain/model/profile_model.dart';
-import 'package:mighty_school/feature/profile/logic/profile_controller.dart';
-import 'package:mighty_school/feature/profile/presentation/widgets/logout_widget.dart';
-import 'package:mighty_school/feature/profile/presentation/widgets/profile_build_card_widget.dart';
-import 'package:mighty_school/util/dimensions.dart';
+import 'package:aitek/feature/profile/domain/model/profile_model.dart';
+import 'package:aitek/feature/profile/logic/profile_controller.dart';
+import 'package:aitek/feature/profile/presentation/widgets/logout_widget.dart';
+import 'package:aitek/feature/profile/presentation/widgets/profile_build_card_widget.dart';
+import 'package:aitek/util/dimensions.dart';
 
 class ProfileInformationWidget extends StatefulWidget {
   const ProfileInformationWidget({super.key});

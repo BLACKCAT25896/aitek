@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mighty_school/common/widget/shimmer_box.dart';
+import 'package:aitek/common/widget/shimmer_box.dart';
 
 class CustomShimmerText extends StatelessWidget {
   const CustomShimmerText({super.key, required this.width, required this.height});

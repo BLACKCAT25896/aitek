@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mighty_school/util/styles.dart';
+import 'package:aitek/util/styles.dart';
 
 class CustomContainer extends StatelessWidget {
   final double? borderRadius;

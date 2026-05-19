@@ -1,23 +1,26 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
-import 'package:mighty_school/common/controller/paginate_dropdown_controller.dart';
-import 'package:mighty_school/localization/domain/repositories/localization_repository.dart';
+import 'package:aitek/api_handle/soap_client.dart';
+import 'package:aitek/common/controller/paginate_dropdown_controller.dart';
+import 'package:aitek/feature/promo/controller/promo_controller.dart';
+import 'package:aitek/feature/promo/domain/repository/promo_repository.dart';
+import 'package:aitek/localization/domain/repositories/localization_repository.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/api_handle/api_client.dart';
-import 'package:mighty_school/common/controller/datepicker_controller.dart';
-import 'package:mighty_school/common/controller/pick_image_controller.dart';
-import 'package:mighty_school/common/controller/splash_controller.dart';
-import 'package:mighty_school/common/controller/theme_controller.dart';
-import 'package:mighty_school/common/repository/splash_repository.dart';
-import 'package:mighty_school/feature/authentication/domain/authentication_repository.dart';
-import 'package:mighty_school/feature/authentication/logic/authentication_controller.dart';
-import 'package:mighty_school/feature/dashboard/controller/dashboard_controller.dart';
-import 'package:mighty_school/feature/profile/domain/repository/profile_repository.dart';
-import 'package:mighty_school/feature/profile/logic/profile_controller.dart';
-import 'package:mighty_school/localization/domain/model/language_model.dart';
-import 'package:mighty_school/localization/controller/localization_controller.dart';
-import 'package:mighty_school/util/app_constants.dart';
+import 'package:aitek/api_handle/api_client.dart';
+import 'package:aitek/common/controller/datepicker_controller.dart';
+import 'package:aitek/common/controller/pick_image_controller.dart';
+import 'package:aitek/common/controller/splash_controller.dart';
+import 'package:aitek/common/controller/theme_controller.dart';
+import 'package:aitek/common/repository/splash_repository.dart';
+import 'package:aitek/feature/authentication/domain/authentication_repository.dart';
+import 'package:aitek/feature/authentication/logic/authentication_controller.dart';
+import 'package:aitek/feature/dashboard/controller/dashboard_controller.dart';
+import 'package:aitek/feature/profile/domain/repository/profile_repository.dart';
+import 'package:aitek/feature/profile/logic/profile_controller.dart';
+import 'package:aitek/localization/domain/model/language_model.dart';
+import 'package:aitek/localization/controller/localization_controller.dart';
+import 'package:aitek/util/app_constants.dart';
 
 Future<Map<String, Map<String, String>>> init() async {
 
@@ -27,6 +30,7 @@ Future<Map<String, Map<String, String>>> init() async {
   final sharedPreferences = await SharedPreferences.getInstance();
   Get.lazyPut(() => sharedPreferences);
   Get.lazyPut(() => ApiClient(appBaseUrl: AppConstants.baseUrl, sharedPreferences: Get.find()));
+  Get.lazyPut(() => const SoapClient(baseUrl: AppConstants.soapBaseUrl));
 
   // Repository
   Get.lazyPut(() => SplashRepository(apiClient : Get.find(), sharedPreferences: Get.find()));
@@ -43,6 +47,11 @@ Future<Map<String, Map<String, String>>> init() async {
 
   Get.lazyPut(() => DatePickerController());
   Get.lazyPut(() => PickImageController());
+
+  Get.lazyPut(() => PromoRepository(soapClient: Get.find()));
+  Get.lazyPut(() => PromoController(promoRepository: Get.find()));
+
+
 
 
 

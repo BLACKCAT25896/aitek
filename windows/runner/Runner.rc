@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.school" "\0"
-            VALUE "FileDescription", "mighty_school" "\0"
+            VALUE "FileDescription", "aitek" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "mighty_school" "\0"
+            VALUE "InternalName", "aitek" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.school. All rights reserved." "\0"
-            VALUE "OriginalFilename", "mighty_school.exe" "\0"
-            VALUE "ProductName", "mighty_school" "\0"
+            VALUE "OriginalFilename", "aitek.exe" "\0"
+            VALUE "ProductName", "aitek" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

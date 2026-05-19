@@ -1,11 +1,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/feature/dashboard/model/navigation_model.dart';
-import 'package:mighty_school/feature/home/presentation/screens/home_screen.dart';
-import 'package:mighty_school/feature/profile/presentation/screens/profile_screen.dart';
-import 'package:mighty_school/helper/responsive_helper.dart';
-import 'package:mighty_school/util/images.dart';
+import 'package:aitek/feature/dashboard/model/navigation_model.dart';
+import 'package:aitek/feature/home/presentation/screens/home_screen.dart';
+import 'package:aitek/feature/profile/presentation/screens/profile_screen.dart';
+import 'package:aitek/feature/promo/presentation/screens/promo_screen.dart';
+import 'package:aitek/helper/responsive_helper.dart';
+import 'package:aitek/util/images.dart';
 
 class DashboardController extends GetxController implements GetxService {
   int _currentTab = 0;
@@ -28,6 +29,9 @@ class DashboardController extends GetxController implements GetxService {
   final List<NavigationModel> item = [
     NavigationModel(name: 'dashboard'.tr, activeIcon: Images.homeActive,
         inactiveIcon: Images.home, screen: const HomeScreen()),
+
+    NavigationModel(name: 'promo'.tr, activeIcon: Images.pay,
+        inactiveIcon: Images.pay, screen: const PromoScreen()),
     NavigationModel(name: 'profile'.tr, activeIcon: Images.menuIcon, inactiveIcon: Images.menuIcon, screen: const ProfileScreen()),
 
   ];

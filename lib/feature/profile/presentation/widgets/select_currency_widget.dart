@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/common/widget/custom_generic_dropdown.dart';
-import 'package:mighty_school/feature/profile/logic/profile_controller.dart';
-import 'package:mighty_school/util/styles.dart';
+import 'package:aitek/common/widget/custom_generic_dropdown.dart';
+import 'package:aitek/feature/profile/logic/profile_controller.dart';
+import 'package:aitek/util/styles.dart';
 
 
 

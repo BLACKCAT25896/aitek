@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/common/controller/datepicker_controller.dart';
-import 'package:mighty_school/common/widget/custom_contaner.dart';
-import 'package:mighty_school/common/widget/custom_title.dart';
-import 'package:mighty_school/helper/date_converter.dart';
+import 'package:aitek/common/controller/datepicker_controller.dart';
+import 'package:aitek/common/widget/custom_contaner.dart';
+import 'package:aitek/common/widget/custom_title.dart';
+import 'package:aitek/helper/date_converter.dart';
 
 class DateSelectionWidget extends StatelessWidget {
   final String? title;

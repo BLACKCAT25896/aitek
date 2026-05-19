@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:mighty_school/util/app_constants.dart';
+import 'package:aitek/util/app_constants.dart';
 
 class ThemeController extends GetxController {
   final SharedPreferences sharedPreferences;

@@ -1,9 +1,9 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:intl/intl.dart';
-import 'package:mighty_school/helper/domain_helper.dart';
-import 'package:mighty_school/localization/domain/model/language_model.dart';
-import 'package:mighty_school/util/images.dart';
+import 'package:aitek/helper/domain_helper.dart';
+import 'package:aitek/localization/domain/model/language_model.dart';
+import 'package:aitek/util/images.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:universal_html/html.dart' as html;
 
@@ -22,6 +22,7 @@ class AppConstants {
   static const String chatGptApiKey = 'your ApiKey';
   static const String baseUrl = 'https://peanut.ifxdb.com'; //Set Your api base url Here
   static const String secondBaseUrl = 'https://client-api.contentdatapro.com'; //Set Your api base url Here
+  static const String soapBaseUrl = 'https://api-forexcopy.contentdatapro.com/Services/CabinetMicroService.svc'; //Set Your api base url Here
   static const String imageBaseUrl = '$baseUrl/storage';
 
 

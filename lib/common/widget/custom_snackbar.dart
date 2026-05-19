@@ -3,9 +3,9 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/helper/responsive_helper.dart';
-import 'package:mighty_school/util/dimensions.dart';
-import 'package:mighty_school/util/styles.dart';
+import 'package:aitek/helper/responsive_helper.dart';
+import 'package:aitek/util/dimensions.dart';
+import 'package:aitek/util/styles.dart';
 import 'package:toastification/toastification.dart';
 
 void showCustomSnackBar(String? message, {bool isError = true, double margin = Dimensions.paddingSizeSmall}) {

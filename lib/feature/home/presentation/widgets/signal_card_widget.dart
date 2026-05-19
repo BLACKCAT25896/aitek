@@ -2,10 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/cmd_badge.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/expand_details_widget.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/period_chip_widget.dart';
-import 'package:mighty_school/feature/profile/domain/model/trading_signal_item.dart';
+import 'package:aitek/feature/home/presentation/widgets/cmd_badge.dart';
+import 'package:aitek/feature/home/presentation/widgets/expand_details_widget.dart';
+import 'package:aitek/feature/home/presentation/widgets/period_chip_widget.dart';
+import 'package:aitek/feature/profile/domain/model/trading_signal_item.dart';
 
 class SignalCard extends StatefulWidget {
   final TradingSignalItem signal;

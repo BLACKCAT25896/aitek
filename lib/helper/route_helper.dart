@@ -2,11 +2,11 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/common/widget/set_canonical_url_widget.dart';
-import 'package:mighty_school/feature/authentication/presentation/screen/login_screen.dart';
-import 'package:mighty_school/feature/dashboard/presentation/dashboard_screen.dart';
-import 'package:mighty_school/feature/profile/presentation/screens/profile_screen.dart';import 'package:mighty_school/helper/custom_page.dart';
-import 'package:mighty_school/util/app_constants.dart';
+import 'package:aitek/common/widget/set_canonical_url_widget.dart';
+import 'package:aitek/feature/authentication/presentation/screen/login_screen.dart';
+import 'package:aitek/feature/dashboard/presentation/dashboard_screen.dart';
+import 'package:aitek/feature/profile/presentation/screens/profile_screen.dart';import 'package:aitek/helper/custom_page.dart';
+import 'package:aitek/util/app_constants.dart';
 
 
 class RouteHelper {

@@ -3,14 +3,14 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/common/controller/theme_controller.dart';
-import 'package:mighty_school/common/model/messages.dart';
-import 'package:mighty_school/helper/di_container.dart';
-import 'package:mighty_school/helper/route_helper.dart';
-import 'package:mighty_school/localization/controller/localization_controller.dart';
-import 'package:mighty_school/theme/dark_theme.dart';
-import 'package:mighty_school/theme/light_theme.dart';
-import 'package:mighty_school/util/app_constants.dart';
+import 'package:aitek/common/controller/theme_controller.dart';
+import 'package:aitek/common/model/messages.dart';
+import 'package:aitek/helper/di_container.dart';
+import 'package:aitek/helper/route_helper.dart';
+import 'package:aitek/localization/controller/localization_controller.dart';
+import 'package:aitek/theme/dark_theme.dart';
+import 'package:aitek/theme/light_theme.dart';
+import 'package:aitek/util/app_constants.dart';
 import 'package:toastification/toastification.dart';
 import 'package:url_strategy/url_strategy.dart';
 

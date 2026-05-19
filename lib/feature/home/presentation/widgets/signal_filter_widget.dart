@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/common/controller/datepicker_controller.dart';
-import 'package:mighty_school/common/widget/custom_button.dart';
-import 'package:mighty_school/common/widget/custom_contaner.dart';
-import 'package:mighty_school/common/widget/custom_snackbar.dart';
-import 'package:mighty_school/common/widget/date_selection_widget.dart';
-import 'package:mighty_school/feature/authentication/logic/authentication_controller.dart';
-import 'package:mighty_school/feature/profile/logic/profile_controller.dart';
-import 'package:mighty_school/feature/profile/presentation/widgets/select_currency_widget.dart';
-import 'package:mighty_school/util/dimensions.dart';
+import 'package:aitek/common/controller/datepicker_controller.dart';
+import 'package:aitek/common/widget/custom_button.dart';
+import 'package:aitek/common/widget/custom_contaner.dart';
+import 'package:aitek/common/widget/custom_snackbar.dart';
+import 'package:aitek/common/widget/date_selection_widget.dart';
+import 'package:aitek/feature/authentication/logic/authentication_controller.dart';
+import 'package:aitek/feature/profile/logic/profile_controller.dart';
+import 'package:aitek/feature/profile/presentation/widgets/select_currency_widget.dart';
+import 'package:aitek/util/dimensions.dart';
 
 class SignalFilterWidget extends StatefulWidget {
   const SignalFilterWidget({super.key});

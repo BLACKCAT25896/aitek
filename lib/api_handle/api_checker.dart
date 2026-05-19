@@ -1,9 +1,9 @@
 
 import 'package:get/get.dart';
-import 'package:mighty_school/api_handle/error_response.dart';
-import 'package:mighty_school/common/widget/custom_snackbar.dart';
-import 'package:mighty_school/feature/authentication/logic/authentication_controller.dart';
-import 'package:mighty_school/feature/authentication/presentation/screen/login_screen.dart';
+import 'package:aitek/api_handle/error_response.dart';
+import 'package:aitek/common/widget/custom_snackbar.dart';
+import 'package:aitek/feature/authentication/logic/authentication_controller.dart';
+import 'package:aitek/feature/authentication/presentation/screen/login_screen.dart';
 
 
 class ApiChecker {

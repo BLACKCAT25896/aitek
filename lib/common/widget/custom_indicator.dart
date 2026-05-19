@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mighty_school/util/dimensions.dart';
+import 'package:aitek/util/dimensions.dart';
 
 class CustomIndicator extends StatelessWidget {
   final int index;

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/common/widget/custom_image.dart';
-import 'package:mighty_school/util/dimensions.dart';
-import 'package:mighty_school/util/images.dart';
-import 'package:mighty_school/util/styles.dart';
+import 'package:aitek/common/widget/custom_image.dart';
+import 'package:aitek/util/dimensions.dart';
+import 'package:aitek/util/images.dart';
+import 'package:aitek/util/styles.dart';
 
 class NoDataFound extends StatelessWidget {
   const NoDataFound({super.key});

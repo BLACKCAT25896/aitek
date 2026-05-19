@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/common/widget/custom_button.dart';
-import 'package:mighty_school/common/widget/custom_contaner.dart';
-import 'package:mighty_school/common/widget/custom_snackbar.dart';
-import 'package:mighty_school/common/widget/custom_text_field.dart';
-import 'package:mighty_school/feature/authentication/logic/authentication_controller.dart';
-import 'package:mighty_school/helper/responsive_helper.dart';
-import 'package:mighty_school/helper/route_helper.dart';
-import 'package:mighty_school/util/app_constants.dart';
-import 'package:mighty_school/util/dimensions.dart';
-import 'package:mighty_school/util/images.dart';
-import 'package:mighty_school/util/styles.dart';
+import 'package:aitek/common/widget/custom_button.dart';
+import 'package:aitek/common/widget/custom_contaner.dart';
+import 'package:aitek/common/widget/custom_snackbar.dart';
+import 'package:aitek/common/widget/custom_text_field.dart';
+import 'package:aitek/feature/authentication/logic/authentication_controller.dart';
+import 'package:aitek/helper/responsive_helper.dart';
+import 'package:aitek/helper/route_helper.dart';
+import 'package:aitek/util/app_constants.dart';
+import 'package:aitek/util/dimensions.dart';
+import 'package:aitek/util/images.dart';
+import 'package:aitek/util/styles.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

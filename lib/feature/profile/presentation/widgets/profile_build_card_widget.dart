@@ -1,14 +1,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/feature/profile/domain/model/profile_model.dart';
-import 'package:mighty_school/feature/profile/logic/profile_controller.dart';
-import 'package:mighty_school/feature/profile/presentation/widgets/balance_tile_widget.dart';
-import 'package:mighty_school/feature/profile/presentation/widgets/leveragechip_widget.dart';
-import 'package:mighty_school/feature/profile/presentation/widgets/profile_divider_widget.dart';
-import 'package:mighty_school/feature/profile/presentation/widgets/state_tile_widget.dart';
-import 'package:mighty_school/feature/profile/presentation/widgets/status_badge_widget.dart';
-import 'package:mighty_school/feature/profile/presentation/widgets/verification_badge.dart';
+import 'package:aitek/feature/profile/domain/model/profile_model.dart';
+import 'package:aitek/feature/profile/logic/profile_controller.dart';
+import 'package:aitek/feature/profile/presentation/widgets/balance_tile_widget.dart';
+import 'package:aitek/feature/profile/presentation/widgets/leveragechip_widget.dart';
+import 'package:aitek/feature/profile/presentation/widgets/profile_divider_widget.dart';
+import 'package:aitek/feature/profile/presentation/widgets/state_tile_widget.dart';
+import 'package:aitek/feature/profile/presentation/widgets/status_badge_widget.dart';
+import 'package:aitek/feature/profile/presentation/widgets/verification_badge.dart';
 
 class ProfileBuildCardWidget extends StatelessWidget {
   final ProfileModel? p;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mighty_school/util/dimensions.dart';
+import 'package:aitek/util/dimensions.dart';
 
 /// A customizable star rating widget for testimonials and reviews
 class StarRating extends StatelessWidget {

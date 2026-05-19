@@ -2,12 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/common/custom_navbar/circle_nav_bar.dart';
-import 'package:mighty_school/feature/dashboard/controller/dashboard_controller.dart';
-import 'package:mighty_school/feature/dashboard/model/navigation_model.dart';
-import 'package:mighty_school/feature/profile/logic/profile_controller.dart';
-import 'package:mighty_school/util/dimensions.dart';
-import 'package:mighty_school/util/styles.dart';
+import 'package:aitek/common/custom_navbar/circle_nav_bar.dart';
+import 'package:aitek/feature/dashboard/controller/dashboard_controller.dart';
+import 'package:aitek/feature/dashboard/model/navigation_model.dart';
+import 'package:aitek/feature/profile/logic/profile_controller.dart';
+import 'package:aitek/util/dimensions.dart';
+import 'package:aitek/util/styles.dart';
 
 class CustomNavbarWidget extends StatelessWidget {
   const CustomNavbarWidget({super.key});

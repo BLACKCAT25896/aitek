@@ -1,8 +1,8 @@
 
 import 'package:file_picker/file_picker.dart';
 import 'package:get/get_connect/http/src/response/response.dart';
-import 'package:mighty_school/api_handle/api_client.dart';
-import 'package:mighty_school/util/app_constants.dart';
+import 'package:aitek/api_handle/api_client.dart';
+import 'package:aitek/util/app_constants.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LocalizationRepository {

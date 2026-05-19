@@ -2,8 +2,8 @@ import 'dart:developer';
 
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:mighty_school/common/widget/custom_snackbar.dart';
-import 'package:mighty_school/helper/image_size_checker.dart';
+import 'package:aitek/common/widget/custom_snackbar.dart';
+import 'package:aitek/helper/image_size_checker.dart';
 
 class PickImageController extends GetxController implements GetxService{
   XFile? thumbnail;

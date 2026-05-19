@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:mighty_school/util/app_constants.dart';
+import 'package:aitek/util/app_constants.dart';
 import 'package:universal_html/html.dart' as html;
 import 'package:flutter/widgets.dart';
 

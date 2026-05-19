@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mighty_school/common/widget/custom_contaner.dart';
-import 'package:mighty_school/util/dimensions.dart';
-import 'package:mighty_school/util/styles.dart';
+import 'package:aitek/common/widget/custom_contaner.dart';
+import 'package:aitek/util/dimensions.dart';
+import 'package:aitek/util/styles.dart';
 
 class CustomTypeButtonWidget extends StatelessWidget {
   final String? title;

@@ -1,8 +1,8 @@
 
 import 'package:get/get.dart';
-import 'package:mighty_school/api_handle/api_checker.dart';
-import 'package:mighty_school/common/repository/splash_repository.dart';
-import 'package:mighty_school/common/widget/custom_snackbar.dart';
+import 'package:aitek/api_handle/api_checker.dart';
+import 'package:aitek/common/repository/splash_repository.dart';
+import 'package:aitek/common/widget/custom_snackbar.dart';
 
 class SplashController extends GetxController {
   final SplashRepository splashRepo;

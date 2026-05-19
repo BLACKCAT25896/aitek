@@ -1,4 +1,4 @@
-import 'package:mighty_school/helper/price_converter.dart';
+import 'package:aitek/helper/price_converter.dart';
 
 class ProfileModel {
   String? address;

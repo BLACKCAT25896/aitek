@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/helper/responsive_helper.dart';
-import 'package:mighty_school/util/dimensions.dart';
-import 'package:mighty_school/util/styles.dart';
+import 'package:aitek/helper/responsive_helper.dart';
+import 'package:aitek/util/dimensions.dart';
+import 'package:aitek/util/styles.dart';
 
 class CustomAppBar extends StatelessWidget  implements PreferredSizeWidget {
   final String? title;

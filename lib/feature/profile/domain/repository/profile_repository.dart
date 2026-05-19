@@ -1,7 +1,7 @@
 import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:mighty_school/api_handle/api_client.dart';
-import 'package:mighty_school/util/app_constants.dart';
+import 'package:aitek/api_handle/api_client.dart';
+import 'package:aitek/util/app_constants.dart';
 
 class ProfileRepository{
   final ApiClient apiClient;

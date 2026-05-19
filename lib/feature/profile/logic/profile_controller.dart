@@ -2,11 +2,11 @@
 import 'dart:developer';
 
 import 'package:get/get.dart';
-import 'package:mighty_school/api_handle/api_checker.dart';
-import 'package:mighty_school/feature/authentication/logic/authentication_controller.dart';
-import 'package:mighty_school/feature/profile/domain/model/profile_model.dart';
-import 'package:mighty_school/feature/profile/domain/model/trading_signal_item.dart';
-import 'package:mighty_school/feature/profile/domain/repository/profile_repository.dart';
+import 'package:aitek/api_handle/api_checker.dart';
+import 'package:aitek/feature/authentication/logic/authentication_controller.dart';
+import 'package:aitek/feature/profile/domain/model/profile_model.dart';
+import 'package:aitek/feature/profile/domain/model/trading_signal_item.dart';
+import 'package:aitek/feature/profile/domain/repository/profile_repository.dart';
 
 class ProfileController extends GetxController implements GetxService{
   final ProfileRepository profileRepository;

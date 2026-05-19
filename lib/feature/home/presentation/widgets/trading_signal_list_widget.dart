@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/empty_state.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/signal_card_widget.dart';
-import 'package:mighty_school/feature/profile/logic/profile_controller.dart';
+import 'package:aitek/feature/home/presentation/widgets/empty_state.dart';
+import 'package:aitek/feature/home/presentation/widgets/signal_card_widget.dart';
+import 'package:aitek/feature/profile/logic/profile_controller.dart';
 
 class SignalListWidget extends StatelessWidget {
   const SignalListWidget({super.key});

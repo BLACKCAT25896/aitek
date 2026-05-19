@@ -1,10 +1,10 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/metachip_inline.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/metachip_widget.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/price_ledder.dart';
-import 'package:mighty_school/feature/profile/domain/model/trading_signal_item.dart';
+import 'package:aitek/feature/home/presentation/widgets/metachip_inline.dart';
+import 'package:aitek/feature/home/presentation/widgets/metachip_widget.dart';
+import 'package:aitek/feature/home/presentation/widgets/price_ledder.dart';
+import 'package:aitek/feature/profile/domain/model/trading_signal_item.dart';
 
 class ExpandedDetail extends StatelessWidget {
   final TradingSignalItem signal;

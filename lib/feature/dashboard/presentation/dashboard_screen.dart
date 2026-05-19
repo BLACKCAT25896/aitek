@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mighty_school/feature/authentication/logic/authentication_controller.dart';
-import 'package:mighty_school/feature/dashboard/controller/dashboard_controller.dart';
-import 'package:mighty_school/feature/dashboard/model/navigation_model.dart';
-import 'package:mighty_school/feature/dashboard/widget/custom_navbar_widget.dart';
-import 'package:mighty_school/feature/profile/logic/profile_controller.dart';
+import 'package:aitek/feature/authentication/logic/authentication_controller.dart';
+import 'package:aitek/feature/dashboard/controller/dashboard_controller.dart';
+import 'package:aitek/feature/dashboard/model/navigation_model.dart';
+import 'package:aitek/feature/dashboard/widget/custom_navbar_widget.dart';
+import 'package:aitek/feature/profile/logic/profile_controller.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});

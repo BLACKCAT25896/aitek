@@ -6,7 +6,7 @@
 // import 'package:get/get.dart';
 // import 'package:path_provider/path_provider.dart';
 // import 'package:http/http.dart' as http;
-// import 'package:mighty_school/util/app_constants.dart';
+// import 'package:aitek/util/app_constants.dart';
 // class NotificationHelper {
 //
 //   static Future<void> initialize(FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin) async {

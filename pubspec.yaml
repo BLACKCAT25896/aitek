@@ -1,7 +1,7 @@
-name: mighty_school
+name: aitek
 description: "A new Flutter project."
 publish_to: 'none'
-version: 1.0.16+16
+version: 1.0.1+1
 
 environment:
   sdk: ^3.6.0
@@ -69,6 +69,7 @@ dependencies:
   syncfusion_flutter_pdfviewer: ^28.2.12
   web_smooth_scroll: ^2.0.0
   pdfx: ^2.9.2
+  xml: ^6.6.1
 
 
 dev_dependencies:

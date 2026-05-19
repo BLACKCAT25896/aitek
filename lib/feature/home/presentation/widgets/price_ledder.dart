@@ -1,8 +1,8 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:mighty_school/feature/home/presentation/widgets/level_row_widget.dart';
-import 'package:mighty_school/feature/profile/domain/model/trading_signal_item.dart';
+import 'package:aitek/feature/home/presentation/widgets/level_row_widget.dart';
+import 'package:aitek/feature/profile/domain/model/trading_signal_item.dart';
 
 class PriceLadder extends StatelessWidget {
   final TradingSignalItem signal;

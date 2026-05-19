@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:mighty_school/common/widget/set_canonical_url_widget.dart';
+import 'package:aitek/common/widget/set_canonical_url_widget.dart';
 
 GetPage customPage({
   required String name,
