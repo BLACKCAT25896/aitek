@@ -82,14 +82,11 @@ flutter:
 
   assets:
     - assets/image/
-    - assets/image/kindergarten/
     - assets/language/
     - assets/icon/
     - assets/icon/svg/
     - assets/svg/
     - assets/payment_icon/
-    - assets/image/saas/
-    - assets/image/question_bank/
 
   fonts:
     - family: Roboto
